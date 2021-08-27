@@ -1,0 +1,23 @@
+<div class="poke-container">
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li *ngFor="let pokemon of pokemons" model="pokemon">
+          <div> {{pokemon.name}} <br>
+          </div>
+          <img id="image" class="images" [src]="pokemon.img" />
+
+          <div *ngIf="!pokemon.isCaught">
+            <button class="btn btn-primary" type="submit" id="poke-button" (click)="catchThePokemon(pokemon)">Catch me</button>
+          </div>
+          <div *ngIf="pokemon.isCaught">isCaught</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <button class="btn btn-success" type="button" (click)="redirectTrainer()">To your trainer page</button>
+    </div>
+  </div>
+
+</div>

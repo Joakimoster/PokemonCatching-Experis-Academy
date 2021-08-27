@@ -1,0 +1,21 @@
+.login-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+
+    background-color: #F7F7F7;
+    box-shadow: 0px 12px 51px -15px rgb(138 138 138);
+}
+
+h2 {
+    color: blueviolet;
+}
+
+h4 {
+    font-size: 14pt;
+}

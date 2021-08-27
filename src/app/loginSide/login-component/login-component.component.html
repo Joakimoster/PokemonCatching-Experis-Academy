@@ -1,0 +1,22 @@
+<div class="login-container">
+    <div class="welcome-section">
+        <div class="row">
+            <div class="col">
+                <h2>Pokemon trainer application!</h2>
+                <h4>Please enter your poke-trainer name to get started</h4>
+            </div>
+        </div>
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit($event)">
+        <div class="loginInput">
+            <div class="row">
+                <div class="col">
+                   <input type="text" id="username" class="form-control" formControlName="username" /> 
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" type="submit">Login </button>
+                </div>      
+            </div>
+        </div>
+    </form>
+</div>

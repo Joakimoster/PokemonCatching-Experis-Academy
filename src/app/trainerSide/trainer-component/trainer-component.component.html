@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="trainer-style">
+        <div class="row">
+            <div class="col">
+                <button autofocus class="btn btn-success" type="button" id="train-button" (click)="routeToPokemons()">Go catch'em
+                    all</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-success" type="button" (click)="logoutUser()">Log out</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2>
+                    Welcome {{trainer.name}} <br>
+                    <h4>This is your current collected pokemons</h4>
+                </h2>
+            </div>
+        </div>
+
+        <ul *ngFor="let pokemon of trainer.pokemons">
+            <li><span>{{pokemon.name}}</span></li>
+            <img id="image" class="images" [src]="pokemon.img" />
+        </ul>
+    </div>
+</div>
